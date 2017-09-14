@@ -1,0 +1,343 @@
+.person-img {
+    width: 100%;
+    height: 840px;
+    background: url("../../img/page_04.jpg") center no-repeat;
+
+    .person-box {
+        position: relative;
+        width: 1000px;
+        height: 840px;
+        margin: 0 auto;
+        z-index: 1;
+
+        .title {
+            position: relative;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            opacity: 1;
+        }
+
+        p.list {
+            position: absolute;
+            width: 315px;
+            height: 147px;
+            right: 0;
+            top: 0;
+            z-index: 40;
+
+            .span1 {
+                position: absolute;
+                left: 0;
+                cursor: pointer;
+
+                img {
+                    width: 159px;
+                    height: 147px;
+                }
+
+                .active {
+                    position: absolute;
+                    width: 160px;
+                    height: 167px;
+                    left: 0;
+                    z-index: 1;
+                    background: url("../../img/img-bg.png") no-repeat;
+                }
+            }
+
+            .span2 {
+                position: absolute;
+                left: 140px;
+                cursor: pointer;
+
+                img {
+                    width: 159px;
+                    height: 147px;
+                }
+
+                .active {
+                    position: absolute;
+                    width: 160px;
+                    height: 167px;
+                    left: 0;
+                    z-index: 1;
+                    background: url("../../img/img-bg.png") no-repeat;
+                }
+            }
+        }
+
+        .person-man {
+            display: none;
+        }
+
+        .person-container {
+            height: 820px;
+            top: -50px;
+
+            .swiper-slide {
+                position: relative;
+                width: 590px;
+                height: 820px;
+
+                .p-box {
+                    display: none;
+
+                    &.active {
+                        display: block;
+                    }
+
+                    .big-img {
+                        position: absolute;
+                        right: 190px;
+
+                        img {
+                            width: 590px;
+                        }
+                    }
+
+                    .star {
+                        position: absolute;
+                        width: 18px;
+                        height: 200px;
+                        left: 240px;
+                        top: 150px;
+                    }
+
+                    .title {
+                        position: absolute;
+                        left: 165px;
+                        top: 100px;
+                        width: 124px;
+                        height: 328px;
+                        font-size: 30px;
+                        background: url("../../img/title-bg.png") no-repeat;
+                        color: #af484f;
+                        opacity: 1;
+
+                        span {
+                            display: block;
+                            position: absolute;
+                            left: 25px;
+                            top: 40px;
+                            width: 30px;
+                            height: 215px;
+                            word-wrap: break-word;
+                            letter-spacing: 20px;
+                            text-align: center;
+                        }
+                    }
+
+                    .text {
+                        position: absolute;
+                        left: 30px;
+                        top: 100px;
+                        width: 115px;
+                        height: 450px;
+                        word-wrap: break-word;
+                        letter-spacing: 2px;
+                        color: #74493c;
+                        font-size: 22px;
+                        line-height: 30px;
+                        writing-mode: vertical-rl;
+                    }
+                }
+            }
+        }
+
+        .person-btn {
+            position: absolute;
+            bottom: 65px;
+            width: 610px;
+            height: 100px;
+            background: url("../../img/p-x.png") bottom no-repeat;
+            z-index: 20;
+            left: 185px;
+
+            .swiper-container-horizontal {
+                width: 350px;
+                height: 115px;
+                top: 35px;
+
+                .swiper-wrapper {
+                    &.p-btn {
+                        top: 10px;
+                    }
+
+                    .swiper-slide {
+                        top: 35px !important;
+                        width: 40px !important;
+                        height: 40px !important;
+                        background: #f3bd7c;
+                        border-radius: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        color: #9f6b72;
+                        font-size: 20px;
+                    }
+
+                    .swiper-slide.swiper-slide-active {
+                        width: 96px !important;
+                        height: 97px !important;
+                        top: 0 !important;
+                        background: url("../../img/person-active.png") no-repeat;
+                    }
+                }
+            }
+        }
+
+        .person-prev {
+            position: absolute;
+            left: 0;
+            top: 300px;
+            z-index: 50;
+            cursor: pointer;
+
+            span {
+                display: block;
+                width: 35px;
+                height: 66px;
+                background: url("../../img/left.png") no-repeat;
+            }
+        }
+
+        .person-next {
+            position: absolute;
+            right: 0;
+            top: 300px;
+            z-index: 50;
+            cursor: pointer;
+
+            span {
+                display: block;
+                width: 35px;
+                height: 66px;
+                background: url("../../img/right.png") no-repeat;
+            }
+        }
+
+        .swiper-bottom-s {
+            position: relative;
+            width: 631px;
+            top: -50px;
+            height: 120px;
+            margin: 0 auto;
+            background: url("../../img/p-x.png") center no-repeat;
+
+            ul {
+                position: absolute;
+                width: 400px;
+                left: 150px;
+                height: 120px;
+
+                li {
+                    position: relative;
+                    float: left;
+                    top: 25px;
+                    width: 50px;
+                    height: 50px;
+                    background: #f3bd7c;
+                    border-radius: 100%;
+                    margin: 10px;
+                    line-height: 50px;
+                    color: #9f6b72;
+                    font-size: 20px;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &.active {
+                        top: 5px;
+                        width: 96px;
+                        height: 120px;
+                        margin: 0 10px;
+                        background: url("../../img/person-active.png") top no-repeat;
+
+                        span {
+                            display: block;
+                            margin-top: 90px;
+                            color: #f3bd7c;
+                        }
+                    }
+                }
+            }
+
+            .p-l {
+                position: absolute;
+                left: 80px;
+                top: 50px;
+                width: 13px;
+                height: 24px;
+                background: url("../../img/p-l.png") no-repeat;
+                cursor: pointer;
+            }
+
+            .p-r {
+                position: absolute;
+                right: 80px;
+                top: 50px;
+                width: 13px;
+                height: 24px;
+                background: url("../../img/p-r.png") no-repeat;
+                cursor: pointer;
+            }
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .gallery-top {
+            height: 80%;
+            width: 100%;
+        }
+
+        .gallery-thumbs {
+            height: 120px !important;
+            width: 400px !important;
+            box-sizing: border-box;
+            bottom: -5px;
+        }
+
+        .gallery-thumbs .swiper-slide {
+            text-align: center;
+
+            span {
+                position: absolute;
+                left: 30px;
+                display: block;
+                width: 40px;
+                height: 40px;
+                background: #f3bd7c;
+                border-radius: 40px;
+                top: 34px;
+                line-height: 40px;
+                font-size: 16px;
+                color: #9f6b72;
+            }
+        }
+
+        .gallery-thumbs .swiper-slide.swiper-slide-active {
+            width: 96px !important;
+            height: 120px !important;
+            margin: 0 10px !important;
+            background: url("../../img/person-active.png") top no-repeat;
+
+            span {
+                top: 85px;
+                left: 27px;
+                font-size: 16px;
+                color: #f3bd7c;
+                background: none;
+            }
+        }
+    }
+}

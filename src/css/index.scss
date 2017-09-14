@@ -1,0 +1,42 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017-08-29 19:30
+ * Description：Description
+ */
+@import "../../libs/scss/util-pc";
+@import "index/page1";
+@import "index/page2";
+@import "index/page3";
+@import "index/page4";
+@import "index/page5";
+@import "index/page6";
+@import "public/imgpop";
+@import "public/activity";
+@import "index/list";
+@import "index/footer";
+
+body {
+    background: #f1f1f1;
+    min-width: 1440px;
+    user-select: none;
+
+    .main {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+
+        .title_line {
+            opacity: 0;
+            position: absolute;
+            left: 99px;
+            top: 180px;
+        }
+
+        .title {
+            opacity: 0;
+            position: absolute;
+            left: 532px;
+            top: 147px;
+        }
+    }
+}

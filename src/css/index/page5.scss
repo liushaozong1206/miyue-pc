@@ -1,0 +1,95 @@
+.accompany {
+    width: 100%;
+    height: 519px;
+    background: url("../../img/page_05.jpg") center no-repeat;
+
+    .accompany-box {
+        position: relative;
+        width: 1000px;
+        height: 519px;
+        margin: 0 auto;
+        z-index: 1;
+
+        .accompany-btn {
+            position: absolute;
+            left: 50%;
+            width: 123px;
+            margin-left: -62px;
+            bottom: 20px;
+
+            a {
+                display: block;
+                width: 123px;
+                height: 46px;
+                background: url("../../img/more.png") no-repeat;
+
+                &:hover {
+                    width: 124px;
+                    height: 47px;
+                    background: url("../../img/more-h.png") no-repeat;
+                }
+            }
+        }
+
+        .title {
+            position: absolute;
+            top: 42px;
+            left: 0;
+            opacity: 1;
+
+            img {
+                width: 164px;
+                height: 50px;
+            }
+        }
+
+        .any {
+            position: relative;
+            top: 110px;
+            width: 1000px !important;
+
+            .swiper-wrapper {
+                height: 330px;
+
+                .swiper-slide {
+                    width: 180px !important;
+                    height: 280px !important;
+                    border-radius: 100%;
+                    text-align: center;
+                    cursor: pointer;
+                    margin: 0 10px !important;
+
+                    img {
+                        margin: 4px;
+                        width: 180px;
+                        height: 280px;
+                        text-align: center;
+                    }
+
+                    span {
+                        text-align: center;
+                        font-size: 22px;
+                        color: #6d7183;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .swiper-button-next {
+            top: 250px;
+            width: 35px;
+            height: 66px;
+            right: -50px;
+            background: url("../../img/right.png") no-repeat;
+        }
+
+        .swiper-button-prev {
+            top: 250px;
+            width: 35px;
+            height: 66px;
+            left: -50px;
+            background: url("../../img/left.png") no-repeat;
+        }
+    }
+}

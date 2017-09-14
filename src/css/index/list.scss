@@ -1,0 +1,98 @@
+
+.list-img-box {
+    width: 100%;
+    margin: 0 auto;
+    background: url("../../img/list.jpg") #f1f1f1 top center no-repeat;
+
+    .list-img {
+        position: relative;
+        width: 1000px;
+        margin: 0 auto;
+
+        .left-title {
+            position: absolute;
+            left: 0;
+            top: -60px;
+        }
+
+        .new-title {
+            position: absolute;
+            right: 0;
+            top: -60px;
+            font-size: 14px;
+            z-index: 20;
+
+            a {
+                color: #4c7ea9;
+            }
+        }
+
+        .list-tab {
+            width: 850px;
+            height: 80px;
+            border-bottom: 1px #eed6d1 solid;
+            padding: 0 75px;
+
+            li {
+                float: left;
+                width: 90px;
+                height: 46px;
+                font-size: 18px;
+                line-height: 46px;
+                color: #352d1f;
+                text-align: center;
+                margin: 10px 15px;
+                cursor: pointer;
+
+                &.active {
+                    color: #fff;
+                    background: url("../../img/active.png") no-repeat;
+                }
+            }
+        }
+
+        .list-cont {
+            width: 100%;
+            background: url("../../img/list.jpg") #f1f1f1 top center no-repeat;
+            margin-bottom: 50px;
+            min-height: 1337px;
+            overflow: hidden;
+
+            p {
+                position: relative;
+                width: 180px;
+                height: 310px;
+                margin: 20px 10px 0;
+                float: left;
+                cursor: pointer;
+
+                img {
+                    width: 180px;
+                    height: 280px;
+                }
+
+                span {
+                    position: relative;
+                    display: block;
+                    width: 180px;
+                    bottom: 0;
+                    font-size: 20px;
+                    color: #6d7183;
+                    text-align: center;
+                }
+            }
+        }
+
+        .list-more {
+            width: 123px;
+            height: 46px;
+            background: url("../../img/more.png") no-repeat;
+            cursor: pointer;
+            margin: 0 auto 50px;
+
+            &:hover {
+                background: url("../../img/more-h.png") no-repeat;
+            }
+        }
+    }
+}

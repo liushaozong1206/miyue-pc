@@ -1,0 +1,169 @@
+.new {
+    width: 100%;
+    height: 356px;
+    background: url("../../img/page_02.jpg") center no-repeat;
+
+    .flower {
+        position: absolute;
+        left: 0;
+        width: 554px;
+        height: 664px;
+        background: url("../../img/flower.png") no-repeat;
+    }
+
+    .new-box {
+        position: relative;
+        width: 1000px;
+        height: 356px;
+        margin: 0 auto;
+        z-index: 1;
+
+        .new-title {
+            position: absolute;
+            right: 0;
+            top: -80px;
+            color: #6d7183;
+            font-size: 14px;
+
+            a {
+                color: #4c7ea9;
+            }
+        }
+
+        .left {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 452px;
+            height: 315px;
+
+            .swiper-container {
+                width: 452px;
+                height: 315px;
+            }
+
+            .swiper-slide {
+                position: relative;
+                width: 452px;
+                height: 315px;
+
+                a {
+                    display: block;
+                    width: 452px;
+                    height: 315px;
+                    color: #6d7183;
+
+                    img {
+                        width: 450px;
+                        height: 222px;
+                        border: 1px #6d7183 solid;
+                    }
+
+                    font {
+                        line-height: 60px;
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    &:hover {
+                        color: #0b1649;
+                    }
+                }
+            }
+
+            .swiper-pagination-bullet-active {
+                background: #6d7183;
+            }
+        }
+
+        .right {
+            position: absolute;
+            right: 0;
+            top: -10px;
+            width: 515px;
+            height: 315px;
+
+            .news-nav {
+                position: absolute;
+                width: 100%;
+                height: 46px;
+                padding-bottom: 6px;
+                border-bottom: 1px #eed6d1 solid;
+
+                a {
+                    display: block;
+                    width: 90px;
+                    height: 46px;
+                    float: left;
+                    line-height: 46px;
+                    text-align: center;
+                    color: #352d1f;
+                    font-size: 16px;
+
+                    &.active {
+                        color: #fff;
+                        background: url("../../img/active.png") no-repeat;
+                    }
+                }
+            }
+
+            .news-list {
+                position: absolute;
+                top: 55px;
+                width: 100%;
+                height: 220px;
+
+                li {
+                    width: 100%;
+                    height: 40px;
+                    line-height: 40px;
+                    color: #4a5059;
+
+                    a {
+                        display: block;
+                        width: 400px;
+                        height: 40px;
+                        color: #4a5059;
+                        float: left;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+
+                        &:hover {
+                            color: #0b1649;
+                        }
+
+                        span {
+                            margin-right: 5px;
+                        }
+                    }
+
+                    time {
+                        float: right;
+                    }
+                }
+            }
+
+            .more {
+                position: absolute;
+                bottom: 0;
+                z-index: 2;
+                left: 180px;
+
+                a {
+                    display: block;
+                    width: 123px;
+                    height: 46px;
+                    background: url("../../img/more.png") no-repeat;
+
+                    &:hover {
+                        width: 124px;
+                        height: 47px;
+                        background: url("../../img/more-h.png") no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

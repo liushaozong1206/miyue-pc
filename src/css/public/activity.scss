@@ -1,0 +1,155 @@
+.activity {
+    position: absolute;
+    width: 242px;
+    top: 300px;
+    right: 60px;
+    z-index: 20;
+
+    .activity-top {
+        position: absolute;
+        left: -30px;
+        width: 302px;
+        height: 75px;
+        background: url("../../img/right-2.png") no-repeat;
+        z-index: 2;
+    }
+
+    .activity-box {
+        position: absolute;
+        width: 242px;
+        height: 200px;
+        left: -5px;
+        border: 4px #9aa1ad solid;
+        border-top: none;
+        top: 30px;
+        background: #efefef;
+
+        .details-a {
+            position: absolute;
+            bottom: 10px;
+            left: 60px;
+        }
+
+        .title-text {
+            position: absolute;
+            width: 100%;
+            font-size: 30px;
+            color: #40444b;
+            text-align: center;
+            margin-top: 40px;
+            opacity: 1;
+        }
+
+        .down {
+            position: absolute;
+            width: 93px;
+            height: 46px;
+            left: 75px;
+            top: 110px;
+            cursor: pointer;
+            background: url("../../img/donw.png") no-repeat;
+        }
+    }
+
+    .cont {
+        position: absolute;
+        width: 218px;
+        height: auto;
+        border: 1px #cdd0d5 solid;
+        z-index: 30;
+        left: 10px;
+        top: 150px;
+        background: #f2f2f2;
+        margin-bottom: 30px;
+
+        .cont-top {
+            .title {
+                position: absolute;
+                top: -25px;
+                left: 20px;
+                width: 176px;
+                height: 46px;
+                background: url("../../img/right-3.png") no-repeat;
+                text-align: center;
+                line-height: 46px;
+                color: #5b719d;
+                font-size: 16px;
+                font-weight: bold;
+                opacity: 1;
+
+                span {
+                    padding-right: 10px;
+                    font-weight: normal;
+                }
+            }
+
+            .time {
+                position: relative;
+                width: 208px;
+                height: 50px;
+                top: 20px;
+                left: 5px;
+                text-align: center;
+                color: #2f4b76;
+                line-height: 50px;
+                background: url("../../img/right-4.png") bottom no-repeat;
+            }
+
+            .text {
+                position: relative;
+                font-size: 14px;
+                color: #4a5059;
+                line-height: 25px;
+                margin-top: 20px;
+
+                span {
+                    position: absolute;
+                    display: block;
+                    bottom: 0;
+                    right: 0;
+                    width: 31px;
+                    height: 31px;
+                    z-index: 2;
+                    cursor: pointer;
+                }
+
+                .describe {
+                    position: relative;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .cont-bottom {
+            position: relative;
+            z-index: 100;
+
+            .details {
+                position: relative;
+                font-size: 14px;
+                color: #4a5059;
+                line-height: 25px;
+                display: none;
+                background: #f2f2f2;
+                margin-top: -1px;
+                border-top: 1px #2f4b76 dashed;
+                padding: 10px;
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .r-x {
+        position: absolute;
+        right: -60px;
+        top: 20px;
+
+        img {
+            width: 96px;
+            height: 227px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+#footer {
+    font-size: 12px;
+    width: 100%;
+    margin: 0 auto;
+    color: #727171;
+    padding: 0;
+    overflow: hidden;
+    background: url(http://www.8864.com/images/copyright1.jpg) repeat-x #000;
+}
+
+#footer .copyright {
+    width: 1200px;
+    color: #727171;
+    overflow: hidden;
+    margin: auto;
+    line-height: 21px;
+}
+
+#footer .copyright a img {
+    float: left;
+    margin: 10px 10px 0 0;
+    display: inline;
+    border: 0;
+}
+
+#footer .copyright a {
+    color: #727171;
+    text-decoration: none;
+}
+
+#footer .copyrightL {
+    width: 345px;
+    float: left;
+    height: 70px;
+    margin-top: 30px;
+    background: url(http://www.8864.com/images/bot_logo.jpg) no-repeat left;
+    border-right: 1px solid #727171;
+}
+
+#footer .copyrightR {
+    float: left;
+    padding: 15px 0 0 20px;
+}
+
+#footer .copyright a:hover {
+    color: #727171;
+    text-decoration: underline;
+}

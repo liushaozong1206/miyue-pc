@@ -1,0 +1,82 @@
+<div id="footer">
+    <div class="copyright">
+        <div class="copyrightL"><a href="http://www.8864.com/" target="_blank"><img
+                        src="http://www.8864.com/images/none.gif" width="195" height="51"></a><a target="_blank"
+                                                                                                 href="http://www.linekong.com/"><img
+                        src="http://www.8864.com/images/none.gif" width="110" height="51"></a></div>
+        <div style="float:left;margin-top:30px;"><img style="margin:0 15px 0 20px; float:left;"
+                                                      src="http://www.8864.com/images/add_wen2.png"><a
+                    href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/gameNetTag/4028c08c510e4b0d015118d1e5e82267"
+                    target="_blank"><img style="margin:3px 0 0 0;" src="http://www.8864.com/images/add_gov_emark.png"
+                                         alt=""></a></div>
+        <div class="copyrightR"><a
+                    target="_blank" href="http://www.linekong.com/games">旗下游戏</a>&nbsp;|&nbsp;<a target="_blank"
+                                                                                                 href="http://www.linekong.com/join">招贤纳才</a>&nbsp;|&nbsp;<a
+                    target="_blank" href="http://www.linekong.com/investor/aboutUs.html">联系我们</a>&nbsp;|&nbsp;<a
+                    target="_blank" href="http://www.linekong.com/article-239-1.shtml">法律声明</a>&nbsp;|&nbsp;<a
+                    onclick="SetHome(this,window.location)" href="javascript:void(0)">设为首页</a>&nbsp;|&nbsp;<a
+                    href="javascript:void(0)"
+                    onclick="AddFavorite(&quot; http://www.8864.com/&quot;,&quot;-=8864,您的游戏平台=-&quot;)">收藏本站</a><br><a
+                    href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">工信部ICP备案号
+                京ICP备09017018号-3</a>　<a target="_blank"
+                                        href="http://img.linekong.com/www8864/2016/10/28/n20161028142228.jpg">京网文[2013]0940-989号</a>　<a
+                    target="_blank" href="http://www.miibeian.gov.cn/">京ICP证070501号</a>　
+            <div style="margin:5px 0; background:url(http://www.8864.com/images/public.png) no-repeat;text-indent:25px;">
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502031416" target="_blank">京公网备案
+                    11010502031416号</a></div>
+            蓝港在线（北京）科技有限公司 电话：010-84170099 地址：北京市朝阳区望京北路启明国际大厦8层 <br>Copyright <span
+                    style="font-family:tahoma">© </span> 2007-2015 linekong.com, All Rights Reserved
+        </div>
+    </div>
+</div>
+<span id="cnzz_stat_icon_1256587176"></span>
+<script>
+    function SetHome (obj, vrl) {
+        try {
+            obj.style.behavior = 'url(#default#homepage)'
+            obj.setHomePage(vrl)
+        } catch (e) {
+            if (window.netscape) {
+                try {
+                    netscape.security.PrivilegeManager.enablePrivilege('UniversalXPConnect')
+                } catch (e) {
+                    alert('此操作被浏览器拒接！\n请在浏览器地址栏输入“about:config”并回车\n然后[signed.applets.codebase_principal_support]设置为“true”')
+                }
+                let prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch)
+                prefs.setCharPref('browser.startup.homepage', vrl)
+            }
+        }
+    }
+
+    function AddFavorite (sURL, sTitle) {
+        try {
+            window.external.addFavorite(sURL, sTitle)
+        } catch (e) {
+            try {
+                window.sidebar.addPanel(sTitle, sURL, '')
+            } catch (e) {
+                alert('加入收藏失败，请使用Ctrl+D进行添加')
+            }
+        }
+    }
+
+    let _hmt = _hmt || [];
+    (function () {
+        let hm = document.createElement('script')
+        hm.src = '//hm.baidu.com/hm.js?4b670f900a4b5693eb0f5245c6fe233d'
+        let s = document.getElementsByTagName('script')[0]
+        s.parentNode.insertBefore(hm, s)
+    })()
+
+    (function () {
+        let lkcnzz = document.createElement('script')
+        lkcnzz.type = 'text/javascript'
+        lkcnzz.async = true
+        lkcnzz.src = (('https:' == document.location.protocol) ? ' https://' : ' http://') + 's4.cnzz.com/stat.php?id=1256587176'
+        let s = document.getElementsByTagName('script')[0]
+        s.parentNode.insertBefore(lkcnzz, s)
+        let lkcnzzspan = document.createElement('span')
+        lkcnzzspan.id = 'cnzz_stat_icon_1256587176'
+        document.body.appendChild(lkcnzzspan)
+    })()
+</script>
